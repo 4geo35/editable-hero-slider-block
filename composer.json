@@ -1,0 +1,27 @@
+{
+    "name": "4geo35/editable-hero-slider-block",
+    "description": "Add hero slider type",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladimir",
+            "email": "aweram-team@yandex.ru"
+        }
+    ],
+    "require": {
+        "4geo35/editable-blocks": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "GIS\\EditableHeroSliderBlock\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GIS\\EditableHeroSliderBlock\\EditableHeroSliderBlockServiceProvider"
+            ]
+        }
+    }
+}
