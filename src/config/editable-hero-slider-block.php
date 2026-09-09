@@ -3,7 +3,7 @@
 return [
     "availableTypes" => [
         "heroSlides" => [
-            "title" => env("EDITABLE_HERO_SLIDER_TITLE", "Слайдер"),
+            "title" => env("EDITABLE_HERO_SLIDER_TITLE", "Слайдер УТП"),
             "admin" => "ehrsb-slides",
             "render" => "ehrsb::types.slides",
         ]
