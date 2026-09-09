@@ -5,12 +5,15 @@
               id="heroSliderBlockDataForm-{{ $block->id }}">
 
             <div>
-                <label for="heroSliderImage-{{ $block->id }}" class="inline-block mb-2">Изображение</label>
+                <label for="heroSliderImage-{{ $block->id }}" class="inline-block mb-2">
+                    Изображение<span class="text-danger {{ $itemId ? 'hidden' : '' }}">*</span>
+                </label>
                 <input type="file" id="heroSliderImage-{{ $block->id }}"
                        class="form-control {{ $errors->has('image') ? 'border-danger' : '' }}"
                        wire:loading.attr="disabled"
                        wire:model.lazy="image">
                 <x-tt::form.error name="image"/>
+                <div class="text-info mt-2">Рекомендуется изображение минимум 1600x900</div>
             </div>
 
             <div>

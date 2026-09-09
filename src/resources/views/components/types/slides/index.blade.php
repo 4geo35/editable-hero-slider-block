@@ -16,6 +16,8 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
-    @include("ehrsb::web.types.slides.includes.swiper-script")
+    @if ($block->items->count() > 1)
+        @include("ehrsb::web.types.slides.includes.swiper-script")
+    @endif
     @include("ehrsb::web.types.slides.includes.swiper-styles")
 @endif
